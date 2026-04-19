@@ -1,40 +1,42 @@
+[Existing content of index.html with the following modifications]
+
+// For Day with date "2026-05-01" (Big Island)
 const DAYS = [
-    ...,
-    {
-        date: '2026-05-01',
+    { 
+        ...
         events: [
-            {
-                time: '9:00 AM',
-                title: 'Event 1',
-            },
-            {
-                time: '9:00 AM',
-                title: 'Kona Coast Snorkel Tour',
-                location: 'Fair Wind Cruises, Hula Kai, and Capt Jack, 78-7130 Kaleiopapa Street, Kailua Kona, HI 96740, US',
-                notes: 'Check in at office. Arrive by 8:45 AM. Contact: (808) 322-2788. Map: https://www.google.com/maps/dir/?api=1&destination=78-7130+Kaleiopapa+Street%2CKailua+Kona%2CHI%2C96740%2CUS&destination_place_id=ChIJoaDGMd0FVHkRVRdcKsmYwt0 Website: https://www.fair-wind.com/',
+            ...,
+            { // New event
+                time: "9:00 AM",
+                title: "Kona Coast Snorkel Tour",
+                location: "Fair Wind Cruises, Hula Kai, and Capt Jack, 78-7130 Kaleiopapa Street, Kailua Kona, HI 96740, US",
+                notes: "Check in at office. Arrive by 8:45 AM. Contact: (808) 322-2788. More info: fair-wind.com. Map: https://www.google.com/maps/dir/?api=1&destination=78-7130+Kaleiopapa+Street%2CKailua+Kona%2CHI%2C96740%2CUS&destination_place_id=ChIJoaDGMd0FVHkRVRdcKsmYwt0",
                 cost: 185
-            },
-            // ... other events
-        ]
+            }
+            // Remove the 3:00 PM 'Easy shore snorkel' event for this day
+        ],
     },
-    {
-        date: '2026-05-05',
+    // For Day with date "2026-05-05" (Kauai)
+    { 
+        ...
         events: [
-            {
-                time: '8:00 AM',
-                title: 'Kauai’s SOUTH SIDE Zodiac Boat Snorkel Adventure',
-                location: '3417 Poipu Road, Koloa, HI 96756, US',
-                notes: '2 Adults. Check in: Arrive 15 mins early (can\'t wait for latecomers). Allow 30–60 min extra if driving from Kapa\'a. Office is behind Garden Island Credit Union (block from Texaco, opposite Koloa Fish Market), look for staff in blue shirts. Map: https://www.google.com/maps/dir/?api=1&destination=3417+Poipu+Road%2CKoloa%2CHI%2C96756%2CUS&destination_place_id=EiUzNDE3IFBvaXB1IFJkIHN0ZSAxMDUsIEtvbG9hLCBISSwgVVNBIiMaIQoWChQKEgk7gdpP1xoHfBFbbKa_gHjvJxIHc3RlIDEwNQ',
+            { // New event at start
+                time: "8:00 AM",
+                title: "Kauai’s SOUTH SIDE Zodiac Boat Snorkel Adventure",
+                location: "3417 Poipu Road, Koloa, HI 96756, US",
+                notes: "2 Adults. Check-in: Arrive 15 minutes early (can't wait for latecomers, tardiness may result in cancellation and no refund). Allow 30–60min extra if driving from Kapa'a. Office is behind Garden Island Credit Union (block from Texaco, opposite Koloa Fish Market)—look for staff in blue shirts. Map: https://www.google.com/maps/dir/?api=1&destination=3417+Poipu+Road%2CKoloa%2CHI%2C96756%2CUS&destination_place_id=EiUzNDE3IFBvaXB1IFJkIHN0ZSAxMDUsIEtvbG9hLCBISSwgVVNBIiMaIQoWChQKEgk7gdpP1xoHfBFbbKa_gHjvJxIHc3RlIDEwNQ",
                 cost: 325
             },
-            // ... other events
-        ]
+            ...
+        ],
     },
-    // ... other DAYS
 ];
 
+// Append to CONTACTS array
 const CONTACTS = [
-     ..., // existing contacts
-    ['Fair Wind Cruises','Snorkel and boat tours, 78-7130 Kaleiopapa Street, Kailua Kona, HI','https://www.fair-wind.com/'],
-    ['Kauai Zodiac','3417 Poipu Road, Koloa, HI 96756','https://www.google.com/maps/dir/?api=1&destination=3417+Poipu+Road%2CKoloa%2CHI%2C96756%2CUS&destination_place_id=EiUzNDE3IFBvaXB1IFJkIHN0ZSAxMDUsIEtvbG9hLCBISSwgVVNBIiMaIQoWChQKEgk7gdpP1xoHfBFbbKa_gHjvJxIHc3RlIDEwNQ']
+    ...,
+    ["Fair Wind Cruises","Snorkel and boat tours, 78-7130 Kaleiopapa Street, Kailua Kona, HI","https://www.fair-wind.com/"],
+    ["Kauai Zodiac","3417 Poipu Road, Koloa, HI 96756","https://www.google.com/maps/dir/?api=1&destination=3417+Poipu+Road%2CKoloa%2CHI%2C96756%2CUS&destination_place_id=EiUzNDE3IFBvaXB1IFJkIHN0ZSAxMDUsIEtvbG9hLCBISSwgVVNBIiMaIQoWChQKEgk7gdpP1xoHfBFbbKa_gHjvJxIHc3RlIDEwNQ"],
 ];
+
+[Ensure all other code, UI, and logic outside DAYS and CONTACTS is unmodified]
